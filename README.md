@@ -420,11 +420,7 @@ All images were rendered on a machine with:
 * **tensorflow:** 0.10.0rc
 * **opencv:** 2.4.9.1
 
-## Acknowledgements
-
-The implementation is based on the projects: 
-* Torch (Lua) implementation 'neural-style' by [jcjohnson](https://github.com/jcjohnson)
-* Torch (Lua) implementation 'artistic-videos' by [manuelruder](https://github.com/manuelruder)
+## Source:
 
 Source video frames were obtained from:
 * [MPI Sintel Flow Dataset](http://sintel.is.tue.mpg.de/)
