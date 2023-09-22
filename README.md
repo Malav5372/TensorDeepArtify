@@ -1,8 +1,8 @@
 # TensorDeepArtify
 
-Welcome to the TensorDeepArtify project!
+Welcome to the TensorDeepArtify project! made during my time as a junior machine learning engineer at Wipro with the help from fellow colleagues and ofcourse the github community and the fellow researchers in this field
 
-I implemented this TensorFlow project, drawing inspiration from 3 Research papers in the field of deep learning and computer vision links to these research papers are mentioned below.
+this TensorFlow project, draws inspiration from 3 Research papers in the field of deep learning and computer vision links to these research papers are mentioned below.
 
 this tensorflow implementation is based on this three comprehensive techniques:
 
