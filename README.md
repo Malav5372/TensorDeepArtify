@@ -4,7 +4,7 @@ Welcome to the TensorDeepArtify project!
 
 I implemented this TensorFlow project, drawing inspiration from 3 Research papers in the field of deep learning and computer vision links to these research papers are mentioned below.
 
-this tensorflow implementation is based on this three comprehensive techniques each:
+this tensorflow implementation is based on this three comprehensive techniques:
 
 1. Artistic Style Transfer for Videos: The foundation for this technique comes from a paper that once seemed like science fiction but is now a reality. The paper titled "Artistic Style Transfer for Videos" showcases how deep learning can transfer artistic styles from images to entire video sequences. It leverages recent advancements in style transfer for still images and introduces novel initializations and loss functions tailored to videos. This enables the creation of consistent and stable stylized videos, even in scenarios with substantial motion and occlusion.
 
