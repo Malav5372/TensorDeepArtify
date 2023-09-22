@@ -387,11 +387,6 @@ python neural_style.py --video \
 * `--first_frame_iterations`: Maximum number of optimizer iterations of the first frame. *Default*: `2000`
 * `--frame_iterations`: Maximum number of optimizer iterations for each frame after the first frame. *Default*: `800`
 
-## Questions and Errata
-
-Send questions or issues:  
-<img src="/equations/email.png">
-
 ## Memory
 By default, `neural-style-tf` uses the NVIDIA cuDNN GPU backend for convolutions and L-BFGS for optimization.
 These produce better and faster results, but can consume a lot of memory. You can reduce memory usage with the following:
@@ -419,26 +414,5 @@ The implementation is based on the projects:
 
 Source video frames were obtained from:
 * [MPI Sintel Flow Dataset](http://sintel.is.tue.mpg.de/)
-
-Artistic images were created by the modern artists:
-* [Alex Grey](http://alexgrey.com/)
-* [Minjae Lee](http://www.grenomj.com/)
-* [Leonid Afremov](https://afremov.com/)
-* [Françoise Nielly](http://www.francoise-nielly.com/)
-* [James Jean](http://www.jamesjean.com/)
-* [Ben Giles](https://benlewisgiles.format.com/)
-* [Callie Fink](http://calliefink.deviantart.com/)
-* [H.R. Giger](https://en.wikipedia.org/wiki/H._R._Giger)
-* [Voka](http://www.voka.at/)
-
-Artistic images were created by the popular historical artists:
-* [Vincent Van Gogh](https://www.wikiart.org/en/vincent-van-gogh)
-* [Wassily Kandinsky](https://www.wikiart.org/en/wassily-kandinsky)
-* [Georgia O'Keeffe](http://www.georgiaokeeffe.net/)
-* [Jean-Michel Basquiat](http://basquiat.com/)
-* [Édouard Manet](http://www.manet.org/)
-* [Pablo Picasso](https://www.wikiart.org/en/pablo-picasso)
-* [Joseph Mallord William Turner](https://en.wikipedia.org/wiki/J._M._W._Turner)
-* [Frida Kahlo](https://en.wikipedia.org/wiki/Frida_Kahlo)
 
 
