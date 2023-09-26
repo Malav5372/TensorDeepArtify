@@ -174,6 +174,13 @@ Multiple styles can be transferred to the foreground and background of the conte
 ### Video
 Animations can be rendered by applying the algorithm to each source frame.  For the best results, the gradient descent is initialized with the previously stylized frame warped to the current frame according to the optical flow between the pair of frames.  Loss functions for temporal consistency are used to penalize pixels excluding disoccluded regions and motion boundaries.
 
+#### video implementations: 
+
+
+https://github.com/Malav5372/TensorDeepArtify/assets/144440737/e4788a63-4bcb-4457-97b2-f8f0b7a8535c
+
+
+
 <p align="center">
 <img src="video/input.gif">
 <img src="video/opt_flow.gif">
