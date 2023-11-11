@@ -177,10 +177,6 @@ Animations can be rendered by applying the algorithm to each source frame.  For 
 #### video implementations: 
 
 
-https://github.com/Malav5372/TensorDeepArtify/assets/144440737/e4788a63-4bcb-4457-97b2-f8f0b7a8535c
-
-
-
 <p align="center">
 <img src="video/input.gif">
 <img src="video/opt_flow.gif">
@@ -192,7 +188,6 @@ https://github.com/Malav5372/TensorDeepArtify/assets/144440737/e4788a63-4bcb-445
 *Top row (left to right)*: source frames, ground-truth optical flow visualized      
 *Bottom row (left to right)*: disoccluded regions and motion boundaries, stylized frames
 
-Big thanks to Mike Burakoff	for finding a bug in the video rendering.
 
 ### Gradient Descent Initialization
 The initialization of the gradient descent is controlled using `--init_img_type` for single images and `--init_frame_type` or `--first_frame_type` for video frames.  White noise allows an arbitrary number of distinct images to be generated.  Whereas, initializing with a fixed image always converges to the same output.
