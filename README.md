@@ -49,7 +49,7 @@ Transferring the style of various artworks to the same content image produces qu
 <img src="lions/styles/giger_crop.jpg" width="192"/>
 </p>
 
-Here we reproduce Figure 3 from the first paper, which renders a photograph of the Neckarfront in Tübingen, Germany in the style of 5 different iconic paintings [The Shipwreck of the Minotaur](http://www.artble.com/artists/joseph_mallord_william_turner/paintings/the_shipwreck_of_the_minotaur), [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889), [Composition VII](https://www.wikiart.org/en/wassily-kandinsky/composition-vii-1913), [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), [Seated Nude](http://www.pablopicasso.org/seated-nude.jsp):
+Here I reproduce Figure 3 from the first paper, which renders a photograph of the Neckarfront in Tübingen, Germany in the style of 5 different iconic paintings [The Shipwreck of the Minotaur](http://www.artble.com/artists/joseph_mallord_william_turner/paintings/the_shipwreck_of_the_minotaur), [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889), [Composition VII](https://www.wikiart.org/en/wassily-kandinsky/composition-vii-1913), [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), [Seated Nude](http://www.pablopicasso.org/seated-nude.jsp):
 <p align="center">
 <img src="gatys_figure/tubingen.png" height="192px">
 <img src="gatys_figure/tubingen_shipwreck.png" height="192px">
@@ -63,7 +63,7 @@ Here we reproduce Figure 3 from the first paper, which renders a photograph of t
 ### Content / Style Tradeoff
 The relative weight of the style and content can be controlled.
 
-Here we render with an increasing style weight applied to [Red Canna](http://www.georgiaokeeffe.net/red-canna.jsp):
+Here I render with an increasing style weight applied to [Red Canna](http://www.georgiaokeeffe.net/red-canna.jsp):
 <p align="center">
 <img src="style_content_tradeoff/okeffe.jpg" height="160px">
 <img src="style_content_tradeoff/okeffe_10.png" width="160px">
@@ -192,7 +192,7 @@ Animations can be rendered by applying the algorithm to each source frame.  For 
 ### Gradient Descent Initialization
 The initialization of the gradient descent is controlled using `--init_img_type` for single images and `--init_frame_type` or `--first_frame_type` for video frames.  White noise allows an arbitrary number of distinct images to be generated.  Whereas, initializing with a fixed image always converges to the same output.
 
-Here we reproduce Figure 6 from the first paper:
+Here I reproduce Figure 6 from the first paper:
 <p align="center">
 <img src="initialization/init_content.png" height="192">
 <img src="initialization/init_style.png" height="192">
@@ -209,7 +209,7 @@ Here we reproduce Figure 6 from the first paper:
 ### Layer Representations
 The feature complexities and receptive field sizes increase down the CNN heirarchy.
 
-Here we reproduce Figure 3 from [the original paper](https://arxiv.org/abs/1508.06576):
+Here I reproduce Figure 3 from [the original paper](https://arxiv.org/abs/1508.06576):
 <table align='center'>
 <tr align='center'>
 <td></td>
