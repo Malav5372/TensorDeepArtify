@@ -1,6 +1,6 @@
 # TensorDeepArtify
 
-Welcome to the TensorDeepArtify!
+Welcome to TensorDeepArtify!
 
 this TensorFlow project, draws inspiration from 3 Research papers in the field of deep learning and computer vision links to these research papers are mentioned below.
 
