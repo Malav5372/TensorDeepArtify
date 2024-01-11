@@ -100,22 +100,6 @@ When using multiple style images, the degree of blending between the images can 
 *Top row (left to right)*: content image, .2 [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + .8 [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), .8 [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + .2 [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893)  
 *Bottom row (left to right)*: .2 [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + .8 [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html), .5 [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + .5 [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html), .8 [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + .2 [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html)
 
-### Transfer style but not color
-The color scheme of the original image can be preserved by including the flag `--original_colors`. Colors are transferred using either the [YUV](https://en.wikipedia.org/wiki/YUV), [YCrCb](https://en.wikipedia.org/wiki/YCbCr), [CIE L\*a\*b\*](https://en.wikipedia.org/wiki/Lab_color_space), or [CIE L\*u\*v\*](https://en.wikipedia.org/wiki/CIELUV) color spaces.
-
-Here we reproduce Figure 1 and Figure 2 in the third paper using luminance-only transfer:
-<p align="center">
-<img src="original_colors/new_york.png" height="165px">
-<img src="original_colors/stylized.png" height="165px">
-<img src="original_colors/stylized_original_colors.png" height="165px">
-
-<img src="original_colors/garden.png" height="165px">
-<img src="original_colors/garden_starry.png" height="165px">
-<img src="original_colors/garden_starry_yuv.png" height="165px">
-</p>
-
-*Left to right*: content image, stylized image, stylized image with the original colors of the content image
-
 ### Textures
 The algorithm is not constrained to artistic painting styles.  It can also be applied to photographic textures to create [pareidolic](https://en.wikipedia.org/wiki/Pareidolia) images.
 <p align="center">
