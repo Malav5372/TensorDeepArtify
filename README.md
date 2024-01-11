@@ -130,25 +130,6 @@ Style can be transferred to semantic segmentations in the content image.
 <img src="segmentation/02630_output.png" height="180px"> 
 </p>
 
-Multiple styles can be transferred to the foreground and background of the content image.
-<p align="center">
-<img src="segmentation/02390.jpg" height="180px">
-<img src="segmentation/basquiat.png" height="180px">
-<img src="segmentation/frida.png" height="180px">
-<img src="segmentation/02390_mask.png" height="180px">
-<img src="segmentation/02390_mask_inv.png" height="180px">
-<img src="segmentation/02390_output.png" height="180px">
-
-<img src="segmentation/02270.jpg" height="180px">
-<img src="segmentation/okeffe_red_canna.png" height="180px">
-<img src="segmentation/okeffe_iris.png" height="180px">
-<img src="segmentation/02270_mask_face.png" height="180px">
-<img src="segmentation/02270_mask_face_inv.png" height="180px">
-<img src="segmentation/02270_output.png" height="180px">
-</p>
-
-*Left to right*: content image, foreground style, background style, foreground mask, background mask, stylized image
-
 ### Video
 Animations can be rendered by applying the algorithm to each source frame.  For the best results, the gradient descent is initialized with the previously stylized frame warped to the current frame according to the optical flow between the pair of frames.  Loss functions for temporal consistency are used to penalize pixels excluding disoccluded regions and motion boundaries.
 
