@@ -1,12 +1,10 @@
 # TensorDeepArtify
 
-Welcome to TensorDeepArtify!
+Welcome to TensorDeepArtify
 
 this TensorFlow project, draws inspiration from 3 Research papers in the field of deep learning and computer vision links to these research papers are mentioned below.
 
 this tensorflow implementation is based on this three comprehensive techniques:
-
-
 
 Feel free to dive into the code, experiment with different styles and segmentation tasks, and share your stylized creations. I  hope this project continues to inspire and serve as a valuable resource for the deep learning community.
 
