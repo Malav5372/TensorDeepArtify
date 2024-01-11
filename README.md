@@ -312,38 +312,6 @@ python neural_style.py --video \
 * `--img_name`: Filename of the output image. *Default*: `result`
 * `--verbose`: Boolean flag indicating if statements should be printed to the console.
 
-#### Optimization Arguments
-* `--optimizer`: Loss minimization optimizer.  L-BFGS gives better results.  Adam uses less memory. *Choices*: `lbfgs`, `adam`. *Default*: `lbfgs`
-* `--learning_rate`: Learning-rate parameter for the Adam optimizer. *Default*: `1e0`  
-
-<p align="center">
-<img src="/equations/plot.png" width="360px">
-</p>
-
-* `--max_iterations`: Max number of iterations for the Adam or L-BFGS optimizer. *Default*: `1000`
-* `--print_iterations`: Number of iterations between optimizer print statements. *Default*: `50`
-* `--content_loss_function`: Different constants K in the content loss function. *Choices*: `1`, `2`, `3`. *Default*: `1` 
-
-<p align="center">
-<img src="/equations/content.png" width="321px">
-</p>
-
-#### Video Frame Arguments
-* `--video`: Boolean flag indicating if the user is creating a video.
-* `--start_frame`: First frame number. *Default*: `1`
-* `--end_frame`: Last frame number. *Default*: `1` 
-* `--first_frame_type`: Image used to initialize the network during the rendering of the first frame. *Choices*: `content`, `random`, `style`. *Default*: `random`
-* `--init_frame_type`: Image used to initialize the network during the every rendering after the first frame. *Choices*: `prev_warped`, `prev`, `content`, `random`, `style`. *Default*: `prev_warped`
-* `--video_input_dir`: Relative or absolute directory path to input frames. *Default*: `./video_input`
-* `--video_output_dir`: Relative or absolute directory path to write output frames to. *Default*: `./video_output`
-* `--content_frame_frmt`: Format string of input frames. *Default*: `frame_{}.png`
-* `--backward_optical_flow_frmt`: Format string of backward optical flow files. *Default*: `backward_{}_{}.flo`
-* `--forward_optical_flow_frmt`: Format string of forward optical flow files. *Default*: `forward_{}_{}.flo`
-* `--content_weights_frmt`: Format string of optical flow consistency files. *Default*: `reliable_{}_{}.txt`
-* `--prev_frame_indices`: Previous frames to consider for longterm temporal consistency. *Default*: `1`
-* `--first_frame_iterations`: Maximum number of optimizer iterations of the first frame. *Default*: `2000`
-* `--frame_iterations`: Maximum number of optimizer iterations for each frame after the first frame. *Default*: `800`
-
 ## Memory
 By default, `neural-style-tf` uses the NVIDIA cuDNN GPU backend for convolutions and L-BFGS for optimization.
 These produce better and faster results, but can consume a lot of memory. You can reduce memory usage with the following:
