@@ -112,24 +112,6 @@ The algorithm is not constrained to artistic painting styles.  It can also be ap
 <img src="pareidolic/styles/ben_giles.png" width="192px">
 </p>
 
-### Segmentation
-Style can be transferred to semantic segmentations in the content image.
-<p align="center">
-<img src="segmentation/00110.jpg" height="180px">
-<img src="segmentation/00110_mask.png" height="180px">
-<img src="segmentation/00110_output.png" height="180px">  
-<img src="segmentation/00017.jpg" height="180px">
-<img src="segmentation/00017_mask.png" height="180px">
-<img src="segmentation/00017_output.png" height="180px">  
-
-<img src="segmentation/00768.jpg" height="180px">
-<img src="segmentation/00768_mask.png" height="180px">
-<img src="segmentation/00768_output.png" height="180px">
-<img src="segmentation/02630.png" height="180px">
-<img src="segmentation/02630_mask.png" height="180px">
-<img src="segmentation/02630_output.png" height="180px"> 
-</p>
-
 ### Video
 Animations can be rendered by applying the algorithm to each source frame.  For the best results, the gradient descent is initialized with the previously stylized frame warped to the current frame according to the optical flow between the pair of frames.  Loss functions for temporal consistency are used to penalize pixels excluding disoccluded regions and motion boundaries.
 
