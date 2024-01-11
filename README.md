@@ -273,6 +273,36 @@ python neural_style.py --video \
                        --first_frame_iterations 3000 \
                        --verbose;
 ```
+*Note*:  When using `--init_frame_type prev_warp` you must have previously computed the backward and forward optical flow between the frames.  See `./video_input/make-opt-flow.sh` and `./video_input/run-deepflow.sh`
+
+#### Arguments
+* `--content_img`: Filename of the content image. *Example*: `lion.jpg`
+* `--content_img_dir`: Relative or absolute directory path to the content image. *Default*: `./image_input`
+* `--style_imgs`: Filenames of the style images. To use multiple style images, pass a *space-separated* list.  *Example*: `--style_imgs starry-night.jpg`
+* `--style_imgs_weights`: The blending weights for each style image.  *Default*: `1.0` (assumes only 1 style image)
+* `--style_imgs_dir`: Relative or absolute directory path to the style images. *Default*: `./styles`
+* `--init_img_type`: Image used to initialize the network. *Choices*: `content`, `random`, `style`. *Default*: `content`
+* `--max_size`: Maximum width or height of the input images. *Default*: `512`
+* `--content_weight`: Weight for the content loss function. *Default*: `5e0`
+* `--style_weight`: Weight for the style loss function. *Default*: `1e4`
+* `--tv_weight`: Weight for the total variational loss function. *Default*: `1e-3`
+* `--temporal_weight`: Weight for the temporal loss function. *Default*: `2e2`
+* `--content_layers`: *Space-separated* VGG-19 layer names used for the content image. *Default*: `conv4_2`
+* `--style_layers`: *Space-separated* VGG-19 layer names used for the style image. *Default*: `relu1_1 relu2_1 relu3_1 relu4_1 relu5_1`
+* `--content_layer_weights`: *Space-separated* weights of each content layer to the content loss. *Default*: `1.0`
+* `--style_layer_weights`: *Space-separated* weights of each style layer to loss. *Default*: `0.2 0.2 0.2 0.2 0.2`
+* `--original_colors`: Boolean flag indicating if the style is transferred but not the colors.
+* `--color_convert_type`: Color spaces (YUV, YCrCb, CIE L\*u\*v\*, CIE L\*a\*b\*) for luminance-matching conversion to original colors. *Choices*: `yuv`, `ycrcb`, `luv`, `lab`. *Default*: `yuv`
+* `--style_mask`: Boolean flag indicating if style is transferred to masked regions.
+* `--style_mask_imgs`: Filenames of the style mask images (example: `face_mask.png`). To use multiple style mask images, pass a *space-separated* list.  *Example*: `--style_mask_imgs face_mask.png face_mask_inv.png`
+* `--noise_ratio`: Interpolation value between the content image and noise image if network is initialized with `random`. *Default*: `1.0`
+* `--seed`: Seed for the random number generator. *Default*: `0`
+* `--model_weights`: Weights and biases of the VGG-19 network.  Download [here](http://www.vlfeat.org/matconvnet/pretrained/). *Default*:`imagenet-vgg-verydeep-19.mat`
+* `--pooling_type`: Type of pooling in convolutional neural network. *Choices*: `avg`, `max`. *Default*: `avg`
+* `--device`: GPU or CPU device.  GPU mode highly recommended but requires NVIDIA CUDA. *Choices*: `/gpu:0` `/cpu:0`. *Default*: `/gpu:0`
+* `--img_output_dir`: Directory to write output to.  *Default*: `./image_output`
+* `--img_name`: Filename of the output image. *Default*: `result`
+* `--verbose`: Boolean flag indicating if statements should be printed to the console.
 
 ## Memory
 By default, `neural-style-tf` uses the NVIDIA cuDNN GPU backend for convolutions and L-BFGS for optimization.
