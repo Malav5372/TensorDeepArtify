@@ -6,6 +6,12 @@ this TensorFlow project, draws inspiration from 3 Research papers in the field o
 
 this tensorflow implementation is based on this three comprehensive techniques:
 
+1. Artistic Style Transfer for Videos: The foundation for this technique comes from a paper that once seemed like science fiction but is now a reality. The paper titled "Artistic Style Transfer for Videos" showcases how deep learning can transfer artistic styles from images to entire video sequences. It leverages recent advancements in style transfer for still images and introduces novel initializations and loss functions tailored to videos. This enables the creation of consistent and stable stylized videos, even in scenarios with substantial motion and occlusion.
+
+2. Image Style Transfer using Convolutional Neural Networks: This technique draws its inspiration from a paper titled "Image Style Transfer Using Convolutional Neural Networks." The paper demonstrates how feature representations from powerful Convolutional Neural Networks (CNNs) can be harnessed to transfer the artistic style between arbitrary images. Although there are technical challenges, such as resolution limitations and computational demands, this approach delivers high perceptual quality in stylized images.
+
+3. Preserving Color in Neural Artistic Style Transfer:Building upon the neural artistic style transfer algorithm described in the paper by Gatys and colleagues, my project addresses a potential shortcoming. While the original algorithm excels at transferring styles, it can inadvertently alter the colors in the scene. This extension introduces simple yet effective linear methods for transferring style while preserving the original colors of the content image
+
 Feel free to dive into the code, experiment with different styles and segmentation tasks, and share your stylized creations. I  hope this project continues to inspire and serve as a valuable resource for the deep learning community.
 
 This is a TensorFlow implementation of several techniques described in the papers: 
