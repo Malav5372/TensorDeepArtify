@@ -27,7 +27,7 @@ Additionally, techniques are presented for semantic segmentation and multiple st
 The Neural Style algorithm synthesizes a [pastiche](https://en.wikipedia.org/wiki/Pastiche) by separating and combining the content of one image with the style of another image using convolutional neural networks (CNN). Below is an example of transferring the artistic style of [The Starry Night](https://en.wikipedia.org/wiki/The_Starry_Night) onto a photograph of an African lion:
 
 <p align="center">
-<img src="lions/42_output.png" width="512"/>
+<img src="lions/42_output.png" width="390"/>
 <img src="lions/content_style.png" width="290"/>
 </p>
 
