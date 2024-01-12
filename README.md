@@ -135,58 +135,6 @@ Here I reproduce Figure 6 from the first paper:
 *Top row (left to right)*: Initialized with the content image, the style image, white noise (RNG seed 1)  
 *Bottom row (left to right)*: Initialized with white noise (RNG seeds 2, 3, 4)
 
-### Layer Representations
-The feature complexities and receptive field sizes increase down the CNN heirarchy.
-
-Here I reproduce Figure 3 from [the original paper](https://arxiv.org/abs/1508.06576):
-<table align='center'>
-<tr align='center'>
-<td></td>
-<td>1 x 10^-5</td>
-<td>1 x 10^-4</td>
-<td>1 x 10^-3</td>
-<td>1 x 10^-2</td>
-</tr>
-<tr>
-<td>conv1_1</td>
-<td><img src="layers/conv1_1_1e5.png" width="192"></td>
-<td><img src="layers/conv1_1_1e4.png" width="192"></td>
-<td><img src="layers/conv1_1_1e3.png" width="192"></td>
-<td><img src="layers/conv1_1_1e2.png" width="192"></td>
-</tr>
-<tr>
-<td>conv2_1</td>
-<td><img src="layers/conv2_1_1e5.png" width="192"></td>
-<td><img src="layers/conv2_1_1e4.png" width="192"></td>
-<td><img src="layers/conv2_1_1e3.png" width="192"></td>
-<td><img src="layers/conv2_1_1e2.png" width="192"></td>
-</tr>
-<tr>
-<td>conv3_1</td>
-<td><img src="layers/conv3_1_1e5.png" width="192"></td>
-<td><img src="layers/conv3_1_1e4.png" width="192"></td>
-<td><img src="layers/conv3_1_1e3.png" width="192"></td>
-<td><img src="layers/conv3_1_1e2.png" width="192"></td>
-</tr>
-<tr>
-<td>conv4_1</td>
-<td><img src="layers/conv4_1_1e5.png" width="192"></td>
-<td><img src="layers/conv4_1_1e4.png" width="192"></td>
-<td><img src="layers/conv4_1_1e3.png" width="192"></td>
-<td><img src="layers/conv4_1_1e2.png" width="192"></td>
-</tr>
-<tr>
-<td>conv5_1</td>
-<td><img src="layers/conv5_1_1e5.png" width="192"></td>
-<td><img src="layers/conv5_1_1e4.png" width="192"></td>
-<td><img src="layers/conv5_1_1e3.png" width="192"></td>
-<td><img src="layers/conv5_1_1e2.png" width="192"></td>
-</tr>
-</table>
-
-*Rows*: increasing subsets of CNN layers; i.e. 'conv4_1' means using 'conv1_1', 'conv2_1', 'conv3_1', 'conv4_1'.   
-*Columns*: alpha/beta ratio of the the content and style reconstruction (see Content / Style Tradeoff).
-
 ## Setup
 #### Dependencies:
 * [tensorflow](https://github.com/tensorflow/tensorflow)
